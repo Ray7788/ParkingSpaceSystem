@@ -11,7 +11,7 @@ class Parking_floor:
         _vehicle_map: a dictionary mapping vehicles to their parking spot range on the floor
         '''
         self._spots = [0] * spot_count          # 车位数
-        self._vehicle_map = {}
+        self._vehicle_map = {}      # 每一辆车的停泊范围
 
     def park_vehicle(self, vehicle):
         '''
