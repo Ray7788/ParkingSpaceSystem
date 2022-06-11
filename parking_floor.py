@@ -1,7 +1,7 @@
 from vehicles import *
 
 # 2
-class Parking_floor:
+class ParkingFloor:
     '''
     This class represents a floor in the parking garage and is responsible for managing the parking spots on that floor.
     '''
