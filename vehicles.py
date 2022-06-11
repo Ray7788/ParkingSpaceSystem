@@ -1,5 +1,12 @@
+# 1
 class Vehicle:
-    def __init__(self, size) -> None:
+    '''
+    base class for vehiles
+    '''
+    def __init__(self, size):
+        ''' 
+        decides how much space should this vehicle occupy 
+        '''
         self.vehicle_size = size
         # self.layer = 
 
@@ -25,11 +32,16 @@ class Van(Vehicle):
     6m < Length < 8m
     '''
     def __init__(self):
-        super().__init__(2)
+        super().__init__(3)
 
 
 class Driver:
     def __init__(self, id, vehicle):
+        '''
+        id: identify every unique drivers in the parking system
+        vehicle: vehicle type
+        payment_due: how much should this driver pay
+        '''
         self._id = id
         self._vehicle = vehicle
         self._payment_due = 0

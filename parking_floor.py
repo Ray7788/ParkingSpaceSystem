@@ -1,10 +1,12 @@
+import vehicles
+
 class ParkingFloor:
     def __init__(self, spot_count):
         self._spots = [0] * spot_count
         self._vehicle_map = {}
 
     def park_vehicle(self, vehicle):
-        size = vehicle.get_spot_size()
+        size = vehicles.Vehicle.get_size
         l, r = 0, 0
         while r < len(self._spots):
             if self._spots[r] != 0:
